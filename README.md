@@ -1,7 +1,7 @@
 # C Parser
 
 This project is a syntax analyzer for the C programming language, implemented in C using Lex/Yacc (Flex/Bison).  
-It performs code analysis.
+
 ---
 
 ## How to Run
