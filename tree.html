@@ -31,7 +31,6 @@
                 .x(d => d.x + 50)
                 .y(d => d.y + 50));
 
-        // Nodes as small dots
         const node = svg.selectAll('.node')
             .data(root.descendants())
             .enter()

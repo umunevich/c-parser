@@ -336,10 +336,16 @@ int main() {
 	} else {
 		printf("Completed with no errors");
 	}
-	printf("\n\n");
-	printf("\t Code generation \n\n");
-	for(int i=0; i<ic_idx; i++){
-		printf("%s", icg[i]);
+
+	FILE *fp2 = fopen("/home/umunevich/University/3/System_programming/C_Parser/generated_code.txt", "w");
+
+	if (fp2) {
+        printf("\n\n");
+        printf("\t Code generation \n\n");
+        for(int i=0; i<ic_idx; i++){
+            fprintf(fp2, "%s", icg[i]);
+        }
+        fclose(fp2);
 	}
 	printf("\n\n");
 }

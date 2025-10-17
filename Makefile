@@ -8,7 +8,7 @@ $(TARGET):
 	gcc -w y.tab.c lex.yy.c -o $(TARGET)
 
 run: $(TARGET)
-	./$(TARGET) < input1.c
+	./$(TARGET) < TestFiles/test1.c
 
 clean:
 	rm -f $(TARGET) y.tab.c y.tab.h y.output lex.yy.c
